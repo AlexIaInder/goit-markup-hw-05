@@ -668,7 +668,36 @@ margin-right: 0;
     padding: 20px;
     margin-top: -5px;
   }
+ 
+.li-portfolio:hover .portfolio-p {
+  opacity: 1;
+}
+.li-portfolio:hover .portfolio-fon::before {
+  opacity: 1;
+}
 
+.portfolio-fon {
+  position: relative;
+}
+.portfolio-fon::before {
+  content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+  }
+  .portfolio-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    display: flex;
+    opacity: 0;
+  }
 
 /* основной color: #212121; */
 /*вторичный цвет  color: #757575 */
